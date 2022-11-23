@@ -38,6 +38,7 @@ public class ContainsDuplicateII {
             if(i>k) set.remove(nums[i-k-1]);
             if (!set.add(nums[i])) return true;
         }
+
         return false;
     }
 
