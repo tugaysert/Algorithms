@@ -37,7 +37,7 @@ public class BestTimeToBuyAndSellStock {
 
             if (min > num) min = num;
 
-            profit = Math.max(num - min, min);
+            profit = Math.max(num - min, profit);
         }
 
         return profit;
