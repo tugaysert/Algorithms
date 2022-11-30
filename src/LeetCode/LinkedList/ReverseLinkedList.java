@@ -21,8 +21,6 @@ public class ReverseLinkedList {
 
     public static ListNode reverseNode(ListNode head) {
 
-        // 1 2 3 4 5
-
 
         ListNode prev = null;
         while (head != null) {
