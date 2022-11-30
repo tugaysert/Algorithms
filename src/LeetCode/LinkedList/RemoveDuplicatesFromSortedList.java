@@ -20,6 +20,20 @@ public class RemoveDuplicatesFromSortedList {
 
     public static ListNode deleteDuplicates(ListNode head) {
 
-        return null;
+        ListNode temp = head;
+
+
+        while (temp !=null) {
+            if (temp.next == null) {
+                break;
+            }
+
+            if (temp.val == temp.next.val) {
+                temp.next = temp.next.next;
+            } else {
+                temp = temp.next;
+            }
+        }
+        return head;
     }
 }
